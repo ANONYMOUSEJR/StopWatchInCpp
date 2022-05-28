@@ -4,10 +4,9 @@
 using namespace std;
 using namespace this_thread;
 
-inline void timePrint(int hr, int min, int sec, int msec) { system("cls"); cout << hr << "h : " << min << "min : " << sec  << "sec. " << msec << "milisec" << endl; }
+inline void timePrint(int hr, int min, int sec, int msec) { system("cls"); cout << hr << " h : " << min << " min : " << sec  << " sec. " << msec << " milisec" << endl; }
 
-inline void begin() { again: cout << "Press the Enter key to start... (Also ALT + ENTER to fullscreen)"; if (cin.get() == '\n') { system("cls"); } else { system("cls"); goto again; } }
-
+inline void begin() { again: cout << "Press the Enter key to start (Also ALT + ENTER to fullscreen)..."; if (cin.get() == '\n') { system("cls"); } }
 
 int main()
 {
